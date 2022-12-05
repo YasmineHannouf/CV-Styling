@@ -1,0 +1,142 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+html body header{
+    background-color: rgb(149, 154, 159);
+    padding-left: 15%;
+}
+header div hgroup h1,header div hgroup h2{
+    color: red;
+}
+header div hgroup{
+    align-self: end;
+}
+header div{
+    display: flex;
+}
+#contact{
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    width: 50%;
+    background-color: black;
+}
+#contact h3{
+    display: none;
+}
+.contacts{
+    width: 100%;
+}
+.content{
+    padding:0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.content section h4 , .experience-date-separator {
+color: red;
+}
+
+.experience-type::after{
+    content: "@";
+    padding-top: 5px;
+}
+
+section{
+    width: 50%;
+}
+.contacts .contact{
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+}
+section h3{
+    display: flex;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #DCDCDC;
+}
+section h3::before{
+    content: '';
+    display: block;
+    width: 1em;
+    height: 1em;
+    background-color: red;
+    border-radius: 100%;
+    margin-right: .5em;
+}
+.contacts .contact .contact-type{
+    background-color: red;
+    padding: 2px 0 2px 2px;
+    width: 20%;
+    color: white;
+}
+.contacts .contact .contact-value{
+    margin-left: 10px;
+}
+.contacts .contact .contact-value a{
+    color: red;
+    text-decoration: 0;
+}
+
+.skill{
+    background-color: rgb(90, 90, 81);
+    padding: .5em;
+    margin: 5px 0;
+    width: 100%;
+}
+.skill span{
+    background-color: red;
+    padding: .5em;
+    display: block;
+}
+[data-skill="5"] span{
+    width: 50%;
+}
+[data-skill="3"] span{
+    width: 30%;
+}
+[data-skill="1"] span{
+    width: 10%;
+}
+[data-skill="9"] span{
+    width: 90%;
+}
+[data-skill="7"] span{
+    width: 70%;
+}
+@media (max-width:575px) {
+    #contact{
+        position: initial;
+        width: 100%;
+        background-color: transparent;
+    }
+    html body header{
+       padding: 1em;
+    }
+    header div{
+        display: block;
+    }
+    header div hgroup h1,header div hgroup h2{
+        margin-top: 0;    
+    }
+    figure{
+        margin-left: 0;
+    }
+    section{
+        width: 100%;
+    }
+    #contact h3{
+        display: flex;
+    }
+    .contacts .contact .contact-type{
+        width: 40%;
+        color: white;
+    }
+}
+
+
+
+/* weak span should take font-weight: 100 */
+/* rotate image property transform: rotate(-24deg); for style 2 */
